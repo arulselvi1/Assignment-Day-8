@@ -1,0 +1,21 @@
+class Person{ 
+constructor(name,age,address){
+this.name = name;
+this.age = age;
+this.address = address;
+}
+getName(){
+return this.name;
+}
+getAge(){
+return this.age;
+}
+getAddress(){
+return this.address;
+}
+}
+
+let p1 = new Person('Arul',25,'123ABC Nagar');
+let p2 = new Person('suresh',31,'12GFH Nagar');
+console.log(p1.getName()+" " +p1.getAge());
+console.log(p2.getName()+" "+p2.getAddress());
