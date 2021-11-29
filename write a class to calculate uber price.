@@ -1,0 +1,23 @@
+class UberAccount{
+constructor(distance,hour,price){
+this.distance = distance;
+this.hour = hour;
+this.price = price;
+}
+getPrice(){
+return this.distance*this.hour*this.price;
+}
+getTotalDistance(){
+return this.distance;
+}
+getTimeTravelled(){
+return this.hour;
+}
+}
+
+let u1 = new UberAccount(50,3,18);
+let u2 = new UberAccount(20,2,14.5);
+console.log(u1.getPrice());
+console.log(u2.getPrice());
+console.log(u1.getTotalDistance());
+console.log(u2.getTimeTravelled());
