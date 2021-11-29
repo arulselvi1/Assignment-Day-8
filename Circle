@@ -1,0 +1,18 @@
+https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
+
+const pi = 3.14;
+class Circle{
+constructor(radius,color){
+this.radius = radius;
+this.color = color;
+}
+getArea() {
+return this.radius*this.radius*pi;
+}
+getCircumference(){
+return 2*pi*this.radius;
+}
+}
+let s1 = new Circle(5,'blue');
+console.log(s1.getArea());
+console.log(s1.getCircumference());
